@@ -31,10 +31,17 @@
     },
     "path": "@PROJECT_PATH@",
     "versionFirst": "4.8.1",
-    "siteFonts": [],
-    "uniqCompNum": 9,
-    "versionPublish": "4.8.1",
-    "screenshot": "screenshot.png"
+    "siteFonts": [
+      {
+        "css": "'Rubik', sans-serif",
+        "name": "Rubik",
+        "url": "https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i"
+      }
+    ],
+    "uniqCompNum": 10,
+    "versionPublish": "4.12.0",
+    "screenshot": "screenshot.png",
+    "imageResize": true
   },
   "pages": {
     "index.html": {
@@ -492,6 +499,28 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "background-color": "@bgColor",
+            ".mbr-text, blockquote": {
+              "color": "#767676"
+            },
+            ".mbr-text": {
+              "color": "#232323"
+            }
+          },
+          "_name": "content1",
+          "_customHTML": "<section class=\"mbr-section article content1\">\n    \n    <mbr-parameters>\n    <!-- Block parameters controls (Blue \"Gear\" panel) -->\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"1\">\n        <input type=\"range\" inline title=\"Width Content\" name=\"widthContent\" min=\"1\" max=\"4\" step=\"1\" value=\"2\">\n        <input type=\"color\" title=\"Background Color\" name=\"bgColor\" value=\"#ffffff\">\n    <!-- End block parameters -->\n    </mbr-parameters> \n\n    <div class=\"container\">\n        <div class=\"media-container-row\">\n            <div class=\"mbr-text col-12 mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\" data-multiline mbr-article mbr-class=\"{'col-md-6': widthContent == 1, 'col-md-8': widthContent == 2, 'col-md-10': widthContent == 3, 'col-md-12': widthContent == 4}\"><p><b>Medidas de seguridad con el Covid19 tomadas por El Hotel Puerto Azul.</b></p><p>El personal sigue todos los protocolos de seguridad indicados por las autoridades locales.</p><p>Se han eliminado objetos compartidos como cartas, revistas, boligrafos y papeles.</p><p>Desinfectante de manos en el alojamiento y zonas importantes</p><p>Hay procedimientos para comprobar la salud de los clientes</p><p>Hay kit de primeros auxilios</p><p>Acceso a profesionales sanitarios</p><p>El alojamiento proporciona termómetros a los clientes</p><p><b>Distanciamiento Fisico</b>&nbsp;</p><p>Registro de entrada y salida sin contacto</p><p>Se puede pagar sin efectivo</p><p>Se siguen las normas de distanciamiento fisico</p></div>\n        </div>\n    </div>\n</section>",
+          "_cid": "s7N3SxX8jj",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "content1-9"
         },
         {
           "_styles": {
